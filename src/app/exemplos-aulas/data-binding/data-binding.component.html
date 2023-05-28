@@ -1,0 +1,26 @@
+<section class="property-binding">
+
+  <article>
+    <h3>Interpolation/Interpolação</h3>
+
+    <p>String renderizada com interpolação: {{ url }}</p>
+    <p>Resultado de 1 + 1 é: {{ 1 + 1 }}</p>
+    <p>Resultado de 1 + 1 não é {{ 1 + 1 + getValor() }}</p>
+    <p>Curso de Angular e gosto do curso: {{ cursoAngular && getCurtirCurso() }}</p>
+  </article>
+
+  <article>
+    <h3>Property Binding</h3>
+
+    <img src="{{ urlImage1 }}" width="200px">
+    <img [src]="urlImage2" width="300px">
+    <!-- o exemplo que o [ ] faz:  <img bind-src=""> -->
+  </article>
+
+  <article>
+    <h3>Class e Style Binding</h3>
+
+
+  </article>
+
+</section>
