@@ -9,6 +9,7 @@ import { MeuPrimeiroComponent } from './meu-primeiro/meu-primeiro.component';
 import { CursosModule } from './cursos/cursos.module';
 import { AulasModule } from './exemplos-aulas/aulas.module';
 
+
 @NgModule({
   declarations: [
     AppComponent,
