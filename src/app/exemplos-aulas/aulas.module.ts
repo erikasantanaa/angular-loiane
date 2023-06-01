@@ -3,10 +3,15 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import { DataBindingComponent } from './data-binding/data-binding.component';
+import { InputOutputComponent } from './input-output/input-output.component';
+import { InputPropriedadeComponent } from './input-propriedade/input-propriedade.component';
+
 
 @NgModule({
   declarations: [
-    DataBindingComponent
+    DataBindingComponent,
+    InputOutputComponent,
+    InputPropriedadeComponent
   ],
   imports: [
     CommonModule,
@@ -14,7 +19,8 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
 
   ],
   exports: [
-    DataBindingComponent
+    DataBindingComponent,
+    InputOutputComponent
   ]
 })
 export class AulasModule { }
