@@ -18,6 +18,7 @@ export class DataBindingComponent {
     nome: 'def',
     idade:  20,
   }
+  nomeDoCurso = 'Angular'
 
   getValor() {
     return 1;

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { InputOutputComponent } from './input-output.component';
+import { InputPropertyComponent } from './input-property.component';
 
-describe('InputOutputComponent', () => {
-  let component: InputOutputComponent;
-  let fixture: ComponentFixture<InputOutputComponent>;
+describe('InputPropertyComponent', () => {
+  let component: InputPropertyComponent;
+  let fixture: ComponentFixture<InputPropertyComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ InputOutputComponent ]
+      declarations: [ InputPropertyComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(InputOutputComponent);
+    fixture = TestBed.createComponent(InputPropertyComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
