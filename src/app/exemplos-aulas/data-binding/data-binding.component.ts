@@ -18,7 +18,8 @@ export class DataBindingComponent {
     nome: 'def',
     idade:  20,
   }
-  nomeDoCurso = 'Angular'
+  valorInical = 12;
+  nomeDoCurso = 'Nome do curso: Angular (exemplo de input-property)'
 
   getValor() {
     return 1;
@@ -43,6 +44,11 @@ export class DataBindingComponent {
   onMouseOverOut() {
     this.isMouseOver = !this.isMouseOver;
   }
+
+  onMudouValor(evento: any) {
+    console.log(evento.novoValor)
+  }
+
 
   constructor() {}
 
