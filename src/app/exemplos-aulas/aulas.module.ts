@@ -5,12 +5,14 @@ import { FormsModule } from '@angular/forms';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { InputPropertyComponent } from './input-property/input-property.component';
 import { OutputPropertyComponent } from './output-property/output-property.component';
+import { CicloVidaComponent } from './ciclo-vida/ciclo-vida.component';
 
 @NgModule({
   declarations: [
     DataBindingComponent,
     InputPropertyComponent,
-    OutputPropertyComponent
+    OutputPropertyComponent,
+    CicloVidaComponent
   ],
   imports: [
     CommonModule,
@@ -19,6 +21,7 @@ import { OutputPropertyComponent } from './output-property/output-property.compo
   ],
   exports: [
     DataBindingComponent,
+    CicloVidaComponent
   ]
 })
 export class AulasModule { }
