@@ -21,6 +21,17 @@ export class DataBindingComponent {
   valorInical = 12;
   nomeDoCurso = 'Nome do curso: Angular (exemplo de input-property)'
 
+  //ciclo de vida de um componente
+  Valor5= 6;
+  mudarValor() {
+    this.Valor5++;
+  }
+  deletarCiclo = false;
+  destruirCiclo() {
+    this.deletarCiclo = true;
+  }
+
+
   getValor() {
     return 1;
   }

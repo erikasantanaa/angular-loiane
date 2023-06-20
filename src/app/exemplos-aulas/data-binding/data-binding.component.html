@@ -1,3 +1,7 @@
+
+<!-- componentes criados em exemplos-aulas -->
+
+<!-- BINDING  -->
 <section class="property-binding">
 
   <article>
@@ -103,8 +107,6 @@
   </article>
 </section>
 
-<br><br>
-
 <section>
   <article class="two-way-binding">
     <h3>5- Two-way data binding</h3>
@@ -119,6 +121,8 @@
   </article>
 </section>
 
+<br><br><br>
+<!-- INPUT/OUTPUT  -->
 <section>
   <article>
     <h3>6- Input/Output Properties</h3>
@@ -130,5 +134,15 @@
       (mudouValor)="onMudouValor($event)">
     </app-output-property>
 
+  </article>
+</section>
+
+<br><br><br>
+<!-- CICLO DE VIDA COMPONENTE  -->
+<section>
+  <article>
+<app-ciclo-vida [valor10]="Valor5" *ngIf="!deletarCiclo"></app-ciclo-vida>
+<button (click)="mudarValor() ">Mudar Valor</button>
+<button (click)="destruirCiclo">Deletar</button>
   </article>
 </section>
