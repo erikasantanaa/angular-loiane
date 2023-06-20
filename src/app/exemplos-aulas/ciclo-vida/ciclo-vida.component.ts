@@ -16,6 +16,7 @@ import {
   templateUrl: './ciclo-vida.component.html',
   styleUrls: ['./ciclo-vida.component.css']
 })
+
 export class CicloVidaComponent implements
   OnChanges,
   OnInit,
@@ -48,7 +49,7 @@ export class CicloVidaComponent implements
     this.log('ngAfterContentInit');
   }
 
-  ngAfterContentChecked() {
+  ngAfterContentChecked(){
     this.log('ngAfterContentChecked');
   }
 
@@ -68,4 +69,5 @@ export class CicloVidaComponent implements
   private log(hook: string) {
     console.log(hook);
   }
+
 }

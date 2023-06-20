@@ -21,6 +21,7 @@ import { CicloVidaComponent } from './ciclo-vida/ciclo-vida.component';
   ],
   exports: [
     DataBindingComponent,
+    CicloVidaComponent
   ]
 })
 export class AulasModule { }
