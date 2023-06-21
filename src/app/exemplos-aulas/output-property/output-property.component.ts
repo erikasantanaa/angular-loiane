@@ -27,3 +27,4 @@ export class OutputPropertyComponent {
     this.mudouValor.emit({ novoValor: this.valor });
   }
 }
+

@@ -6,6 +6,6 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./input-property.component.css']
 })
 export class InputPropertyComponent {
-  @Input('nome') nomeCurso= ''
+  @Input('nome') nomeCurso= '';
 
 }

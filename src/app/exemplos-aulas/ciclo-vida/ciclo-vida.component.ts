@@ -43,7 +43,7 @@ export class CicloVidaComponent implements
 
   ngDoCheck() {
     this.log('ngDoCheck');
-  };
+  }
 
   ngAfterContentInit() {
     this.log('ngAfterContentInit');

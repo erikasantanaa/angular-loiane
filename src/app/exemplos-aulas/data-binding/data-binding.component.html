@@ -41,35 +41,35 @@
     <div
     class="alert"
     role="alert"
-    [class.alert-success]="classe.value == 'alert-success' "
+    [class.alert-success]="classe.value === 'alert-success' "
     >
       Sucesso
     </div>
     <div
     class="alert"
     role="alert"
-    [class.alert-info]="classe.value == 'alert-info' "
+    [class.alert-info]="classe.value === 'alert-info' "
     >
       Info
     </div>
     <div
     class="alert"
     role="alert"
-    [class.alert-warning]="classe.value == 'alert-warning' "
+    [class.alert-warning]="classe.value === 'alert-warning' "
     >
       Alerta
     </div>
     <div
     class="alert"
     role="alert"
-    [class.alert-danger]="classe.value == 'alert-danger' "
+    [class.alert-danger]="classe.value === 'alert-danger' "
     >
       Erro
     </div>
     <div
     class="alert"
     role="alert"
-    [style.display]="classe.value == 'alert-danger' ? 'block' : 'none'"
+    [style.display]="classe.value === 'alert-danger' ? 'block' : 'none'"
     >
       Esse texto somente aparece em caso de erro.
     </div>

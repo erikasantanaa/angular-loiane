@@ -11,7 +11,7 @@ export class DataBindingComponent {
   urlImage2 = 'https://ogimg.infoglobo.com.br/cultura/13748681-aea-0a0/FT1086A/760/Hello.jpg'
   cursoAngular = true;
   valorAtual = '';
-  valorSalvo: any;
+  valorSalvo: number | undefined;
   isMouseOver = false;
   nomeDigitar = 'abc';
   pessoa: any = {
@@ -59,8 +59,5 @@ export class DataBindingComponent {
   onMudouValor(evento: any) {
     console.log(evento.novoValor)
   }
-
-
-  constructor() {}
 
 }
