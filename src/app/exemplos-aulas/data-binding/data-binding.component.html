@@ -141,8 +141,23 @@
 <!-- CICLO DE VIDA COMPONENTE  -->
 <section>
   <article>
-<app-ciclo-vida [valor10]="Valor5" *ngIf="!deletarCiclo"></app-ciclo-vida>
-<button (click)="mudarValor() ">Mudar Valor</button>
-<button (click)="destruirCiclo">Deletar</button>
+    <h3>Ciclo de vida componente</h3>
+
+    <app-ciclo-vida [valor10]="Valor5" *ngIf="!deletarCiclo"></app-ciclo-vida>
+    <button (click)="mudarValor() ">Mudar Valor</button>
+    <button (click)="destruirCiclo">Deletar</button>
   </article>
 </section>
+
+<br><br><br>
+<!-- DIRETIVAS  -->
+
+<section>
+  <article>
+    <h3>Diretivas</h3>
+
+    <app-diretiva-ngif></app-diretiva-ngif>
+
+  </article>
+</section>
+
