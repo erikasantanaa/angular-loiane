@@ -9,6 +9,7 @@ import { CicloVidaComponent } from './ciclo-vida/ciclo-vida.component';
 import { DiretivaNgifComponent } from './diretiva-ngif/diretiva-ngif.component';
 import { DiretivaNgswitchComponent } from './diretiva-ngswitch/diretiva-ngswitch.component';
 import { DiretivaNgforComponent } from './diretiva-ngfor/diretiva-ngfor.component';
+import { NgclassComponent } from './ngclass/ngclass.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { DiretivaNgforComponent } from './diretiva-ngfor/diretiva-ngfor.componen
     CicloVidaComponent,
     DiretivaNgifComponent,
     DiretivaNgswitchComponent,
-    DiretivaNgforComponent
+    DiretivaNgforComponent,
+    NgclassComponent
   ],
   imports: [
     CommonModule,
