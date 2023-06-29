@@ -32,3 +32,20 @@
   Não existem cursos para serem listados.
 </div>
 <br>
+
+<h5>Removendo o * e usando template</h5>
+<!--
+<div *ngIf="mostrarCursos">
+  Lista de cursos aqui.
+</div> -->
+
+<!-- por trás dos panos -->
+<!--
+<template [ngIf]="mostrarCursos">
+  <div>Lista de cursos aqui.</div>
+</template> -->
+
+<div template="ngIf mostrarCursos">
+  Lista de cursos aqui
+</div>
+
