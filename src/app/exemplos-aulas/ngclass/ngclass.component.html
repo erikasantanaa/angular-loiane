@@ -1,2 +1,55 @@
 <h5>ngClass</h5>
 
+<h1>
+  <i>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmarks" viewBox="0 0 16 16">
+      <path d="M2 4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v11.5a.5.5 0 0 1-.777.416L7 13.101l-4.223 2.815A.5.5 0 0 1 2 15.5V4zm2-1a1 1 0 0 0-1 1v10.566l3.723-2.482a.5.5 0 0 1 .554 0L11 14.566V4a1 1 0 0 0-1-1H4z"/>
+      <path d="M4.268 1H12a1 1 0 0 1 1 1v11.768l.223.148A.5.5 0 0 0 14 13.5V2a2 2 0 0 0-2-2H6a2 2 0 0 0-1.732 1z"/>
+    </svg>
+  </i>
+  <i>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmarks-fill" viewBox="0 0 16 16">
+      <path d="M2 4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v11.5a.5.5 0 0 1-.777.416L7 13.101l-4.223 2.815A.5.5 0 0 1 2 15.5V4z"/>
+      <path d="M4.268 1A2 2 0 0 1 6 0h6a2 2 0 0 1 2 2v11.5a.5.5 0 0 1-.777.416L13 13.768V2a1 1 0 0 0-1-1H4.268z"/>
+    </svg>
+  </i>
+  <!-- (click)="onClick()" -->
+
+</h1>
+<br>
+
+<h5>ngStyle com property binding (style binding)</h5>
+<button
+  [style.backgroundColor]="ativo ? 'blue' : 'gray'"
+  [style.color]="ativo ? 'white' : 'black'"
+  [style.fontWeight]="ativo ? 'bold' : 'normal'"
+  [style.fontSize]="tamanhoFonte + 'px'"
+  (click)="mudarAtivo()"
+>
+Mudar atributo 'ativo'
+</button>
+<br>
+<input type="text" [(ngModel)]="tamanhoFonte">
+<br>
+
+<h5>Styles com diretivas ngStyle</h5>
+<p>está comentado no codigo</p>
+<!-- <button
+  [[ngStyle]="{
+    'backgroundColor': (ativo ? 'blue' : 'gray'),
+    'color': (ativo ? 'white' : 'black'),
+    'fontWeight': (ativo ? 'bold' : 'normal'),
+    'fontSize': tamanhoFonte + 'px'
+  }"
+  (click)="mudarAtivo()"
+  >
+</button> -->
+<br>
+
+<h5>Operador Elvis ("?")</h5>
+<p>Descrição: {{ tarefa.desc }}</p>
+<!-- <p>{{ tarefa.responsavel.nome }}</p> //dá erro -->
+
+<p>Responsável: {{ tarefa.responsavel !== null ? tarefa.responsavel.nome : ''}}</p>
+<p>responsavel (com elvis): {{ tarefa.responsavel?.nome}}</p>
+<p>responsavel: {{ tarefa.responsavel?.usuario?.nome }}</p>
