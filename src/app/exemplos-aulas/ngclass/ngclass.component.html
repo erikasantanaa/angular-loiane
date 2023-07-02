@@ -53,3 +53,18 @@ Mudar atributo 'ativo'
 <p>Responsável: {{ tarefa.responsavel !== null ? tarefa.responsavel.nome : ''}}</p>
 <p>responsavel (com elvis): {{ tarefa.responsavel?.nome}}</p>
 <p>responsavel: {{ tarefa.responsavel?.usuario?.nome }}</p>
+
+<br><br>
+
+<h5>ng-content</h5>
+
+<div class="card">
+  <h5 class="card-header">
+    <ng-content select=".titulo"></ng-content>
+  </h5>
+  <div class="card-body">
+    <p class="card-text">
+      <ng-content select=".corpo"></ng-content>
+    </p>
+  </div>
+</div>
